@@ -11,6 +11,7 @@ const parseCookies = (req, res, next) => {
   } else {
     auth.createSession(req, res, next);
   }
+
   next();
 };
 
